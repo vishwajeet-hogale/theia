@@ -7,3 +7,4 @@ Flask
 pickle5
 torchvision
 pyttsx3
+gunicorn
