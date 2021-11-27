@@ -32,7 +32,7 @@ def test():
     else :
         return "I'm alive!"
 if __name__ == "__main__":
-    with open('data/vocab.pkl', 'rb') as f:
+    with open('vocab.pkl', 'rb') as f:
         vocab = pickle.load(f)
     
     
