@@ -16,7 +16,7 @@ app = Flask(__name__)
 import os
 @app.route('/')
 def index():
-    return "Backend running on port 5000"
+    return "Backend running on port 8080"
 
 @app.route('/predict', methods=['POST','GET'])
 def test():
@@ -24,10 +24,11 @@ def test():
         file = request.files['image']
         img = Image.open(file.stream)
         img = img.save("img1.jpeg")
-        text=caption(vocab,'img1.jpeg')
-        text=text[8:-5]
+        # text=caption(vocab,'img1.jpeg')
+        # text=text[8:-5]
 
-        return {"predicted": text}
+
+        return {"predicted": "Post Working"}
     else :
         return "I'm alive!"
 if __name__ == "__main__":
