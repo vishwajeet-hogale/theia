@@ -24,11 +24,11 @@ def test():
         file = request.files['image']
         img = Image.open(file.stream)
         img = img.save("img1.jpeg")
-        # text=caption(vocab,'img1.jpeg')
-        # text=text[8:-5]
+        text=caption(vocab,'img1.jpeg')
+        text=text[8:-5]
 
 
-        return {"predicted": "Post Working"}
+        return {"predicted": text}
     else :
         return "I'm alive!"
 if __name__ == "__main__":
