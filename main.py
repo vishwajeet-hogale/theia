@@ -16,6 +16,8 @@ app = Flask(__name__)
 import os
 
 global vocab 
+with open('vocab.pkl', 'rb') as f:
+    vocab = pickle.load(f)
 
 @app.route('/')
 def index():
