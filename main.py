@@ -14,6 +14,9 @@ import pyttsx3
 from flask import make_response, send_file
 app = Flask(__name__)
 import os
+
+global vocab 
+
 @app.route('/')
 def index():
     return "Backend running on port 8080"
@@ -21,8 +24,8 @@ def index():
 @app.route('/predict', methods=['POST','GET'])
 def test():
     if request.method == 'POST':
-        with open('vocab.pkl', 'rb') as f:
-            vocab = pickle.load(f)  
+        # with open('vocab.pkl', 'rb') as f:
+        #     vocab = pickle.load(f)  
         file = request.files['image']
         img = Image.open(file.stream)
         img = img.save("img1.jpeg")
