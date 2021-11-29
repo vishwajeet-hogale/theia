@@ -16,8 +16,8 @@ app = Flask(__name__)
 import os
 
 global vocab 
-with open('vocab.pkl', 'rb') as f:
-    vocab = pickle.load(f)
+# with open('vocab.pkl', 'rb') as f:
+#     vocab = pickle.load(f)
 
 @app.route('/')
 def index():
@@ -25,6 +25,8 @@ def index():
 
 @app.route('/predict', methods=['POST','GET'])
 def test():
+    with open('vocab.pkl', 'rb') as f:
+        vocab = pickle.load(f)
     if request.method == 'POST':
         # with open('vocab.pkl', 'rb') as f:
         #     vocab = pickle.load(f)  
