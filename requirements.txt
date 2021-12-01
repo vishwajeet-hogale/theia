@@ -1,10 +1,10 @@
 matplotlib
 nltk
 numpy
+gunicorn==19.9.0
 Pillow
 argparse
 Flask
 pickle5
 torchvision
 pyttsx3
-gunicorn
