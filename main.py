@@ -15,7 +15,7 @@ from flask import make_response, send_file
 app = Flask(__name__)
 import os
 
-global vocab 
+vocab = None 
 # with open('vocab.pkl', 'rb') as f:
 #     vocab = pickle.load(f)
 
@@ -40,9 +40,9 @@ def test():
         return {"predicted": text}
     else :
         return "I'm alive!"
-if __name__ == "__main__":
-    with open('vocab.pkl', 'rb') as f:
-        vocab = pickle.load(f)
-    
-    
-    app.run(debug=True,port=8080)
+# if __name__ == "__main__":
+with open('vocab.pkl', 'rb') as f:
+    vocab = pickle.load(f)
+
+
+app.run(debug=True,port=8080)
