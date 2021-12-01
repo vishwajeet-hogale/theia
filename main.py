@@ -40,9 +40,12 @@ def test():
         return {"predicted": text}
     else :
         return "I'm alive!"
-# if __name__ == "__main__":
-with open('vocab.pkl', 'rb') as f:
+if __name__ == "__main__":
+    with open('vocab.pkl', 'rb') as f:
+        vocab = pickle.load(f)
+    f = open("vocab.pkl","rb")
     vocab = pickle.load(f)
+    f.close()
 
 
-app.run(debug=True,port=8080)
+    app.run(debug=True,port=8080)
