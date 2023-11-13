@@ -20,6 +20,9 @@ Goal:
 * Verbal description of all the objects in the surroundings of a blind person.
 
 ## Model Architecture and working
+
+![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/f29cac0c-eac9-45fa-8367-dfe13f04dce7)
+
 ![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/a3c45cd0-72af-4907-a52b-e877086f5b91)
 
 ![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/e5e58af2-b230-4865-8920-907cd988deb8)
