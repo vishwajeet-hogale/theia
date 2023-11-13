@@ -19,6 +19,7 @@ Goal:
 * Detects all objects from a given picture and generates text captions.
 * Verbal description of all the objects in the surroundings of a blind person.
 
+## Model Architecture and working
 ![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/a3c45cd0-72af-4907-a52b-e877086f5b91)
 
 ![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/e5e58af2-b230-4865-8920-907cd988deb8)
@@ -27,5 +28,18 @@ Goal:
 
 ![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/aa17c21f-b05f-4aa8-8c1e-93f2920cb461)
 
+## Relevant screenshots 
+
+Note : The desciptions generated are played are read out for the blind. 
+![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/d489810a-32ef-4308-a0b5-1ebbadfcb1f2)
+
+![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/1e858a1c-8d96-473f-9a50-9d89be9e7655)
+![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/b74d12c1-5c32-46af-969a-ab2acf05c3f5)
+![image](https://github.com/vishwajeet-hogale/theia/assets/69192757/7c8414ca-e2b5-4880-b969-81b54bf8d833)
+
+## Future work 
+Eyes are one of our most important sense organs as it helps us perceive our surroundings. There is a growing issue of people facing issues with their eyesight and becoming visually impaired. Our application will help such people move about in their day to day life with greater ease and also become more independent.
+
+In the future we plan on deploying our model onto a cloud platform to improve its performance. We also plan on making our application in multiple languages allowing people from all over the world to use our application.
 
 
